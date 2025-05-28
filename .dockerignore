@@ -1,20 +1,35 @@
-**/*.md
-**/.env
-.cache
-assets
-node_modules
-packages/node-dev
-packages/**/node_modules
-packages/**/dist
-packages/**/.turbo
-packages/**/*.test.*
+# Служебные файлы и папки
 .git
 .github
-!.github/scripts
-*.tsbuildinfo
-packages/cli/dist/**/e2e.*
-docker/compose
-docker/**/Dockerfile
 .vscode
-cypress
-test-workflows
+.devcontainer
+.dockerignore
+
+# Локальные данные n8n и логи
+.n8n
+*.log
+*.sqlite
+.env
+.env.*
+
+# Сборка и временные папки
+node_modules
+.next
+dist
+build
+
+# Docker/CI
+docker-compose*
+Dockerfile*
+railway.toml
+
+# Тесты и отладка
+test-workflows/
+scripts/
+cypress/
+patches/
+
+# Статика и прочее
+intro/
+assets/demo/
+
