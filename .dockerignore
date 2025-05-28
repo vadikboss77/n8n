@@ -1,20 +1,24 @@
-**/*.md
-**/.env
-.cache
-assets
+# Папки
 node_modules
-packages/node-dev
-packages/**/node_modules
-packages/**/dist
-packages/**/.turbo
-packages/**/*.test.*
-.git
+.n8n
+.next
+.idea
 .github
-!.github/scripts
-*.tsbuildinfo
-packages/cli/dist/**/e2e.*
-docker/compose
-docker/**/Dockerfile
-.vscode
-cypress
-test-workflows
+intro/
+i18n/
+
+# Файлы
+.env
+.env.*
+*.log
+*.sqlite
+*.pyc
+*.zip
+*.tar.gz
+
+# Служебные конфиги
+Dockerfile
+Dockerfile*
+docker-compose*
+railway.toml
+
