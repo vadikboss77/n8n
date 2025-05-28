@@ -1,20 +1,51 @@
+# Markdown / документация
 **/*.md
+
+# Конфиги и переменные окружения
 **/.env
-.cache
-assets
+*.env
+.env.*
+*.tsbuildinfo
+
+# node_modules везде
 node_modules
-packages/node-dev
 packages/**/node_modules
+
+# Сборочные артефакты
+.cache
 packages/**/dist
 packages/**/.turbo
+.next
+dist
+build
+
+# Тесты
 packages/**/*.test.*
-.git
-.github
-!.github/scripts
-*.tsbuildinfo
 packages/cli/dist/**/e2e.*
+test-workflows
+cypress
+
+# Docker и dev
 docker/compose
 docker/**/Dockerfile
+Dockerfile
+docker-compose*
+railway.toml
+.devcontainer
+
+# IDE
 .vscode
-cypress
-test-workflows
+.idea
+
+# Git
+.git
+.github
+!.github/scripts  # если нужны CI-скрипты
+
+# Мусор
+*.log
+*.sqlite
+.n8n
+
+# Картинки и демо (если не нужны в проде)
+assets/demo
